@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vietanhjp93/testPrj.git"
+    "url": "git+https://github.com/vietanhjp93/craw-news-tool.git"
   },
   "keywords": [
     "s3upload"
@@ -24,7 +24,7 @@
   "author": "vietanhjp93",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vietanhjp93/testPrj/issues"
+    "url": "https://github.com/vietanhjp93/craw-news-tool/issues"
   },
-  "homepage": "https://github.com/vietanhjp93/testPrj#readme"
+  "homepage": "https://github.com/vietanhjp93/craw-news-tool#readme"
 }
