@@ -1,8 +1,7 @@
 {
   "name": "s3-upload-tools",
   "version": "1.0.0",
-  "description": "fisrt version",
-  "main": "index.js",
+  "private": true,
   "dependencies": {
     "@google-cloud/storage": "^5.2.0",
     "@google-cloud/translate": "^6.0.2",
@@ -10,21 +9,7 @@
     "express": "^4.17.1",
     "puppeteer": "^5.2.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vietanhjp93/craw-news-tool.git"
-  },
-  "keywords": [
-    "s3upload"
-  ],
-  "author": "vietanhjp93",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vietanhjp93/craw-news-tool/issues"
-  },
-  "homepage": "https://github.com/vietanhjp93/craw-news-tool#readme"
+  }
 }
