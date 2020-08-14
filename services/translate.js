@@ -7,7 +7,7 @@
 const {Translate} = require('@google-cloud/translate').v2;
 // Instantiates a client
 const projectId = 'learnjapaneseeas-1593326463256';
-const key = global.translateKey;
+const key = process.env.translateKey;
 const translate = new Translate({projectId, key});
 
 const fs = require('fs');

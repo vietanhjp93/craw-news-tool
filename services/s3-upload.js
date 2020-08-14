@@ -2,8 +2,8 @@ const log = require('../tools/log');
 const fs = require('fs');
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
-  accessKeyId: global.accessKeyId,
-  secretAccessKey: global.secretAccessKey
+  accessKeyId: process.env.accessKeyId,
+  secretAccessKey: process.env.secretAccessKey
 });
 
 
