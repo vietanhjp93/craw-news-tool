@@ -15,6 +15,18 @@ const s3UploadFile = require('./services/s3-upload');
 const checkJsonFile = require('./tools/checkJsonFile');
 const fs = require('fs');
 const log = require('./tools/log');
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    console.log("client connected");
+    res.send("Welcome to the home page baby");
+} )
+const port = process.env.port || 3000;
+app.listen(port, () => {
+    console.log("web online");
+})
+
 
 
 global.logFlag = true;
@@ -27,12 +39,12 @@ global.logFlag = true;
 global.logLevel = 2;
 
 async function gogo() {
-    await crawlNews.crawlNewsMainFunc();
+    // await crawlNews.crawlNewsMainFunc();
     await splitNewsContent.splitNewsContentFunc();
-    await translate.translateFunc();
-    await furiganaGet.furiganaGetFunc();
+    // await translate.translateFunc();
+    // await furiganaGet.furiganaGetFunc();
     // await uploadFile.uploadToCloud();
-    await s3UploadFile.s3UploadFileFunc();
+    // await s3UploadFile.s3UploadFileFunc();
 
 
     // await checkJsonFile.checkJsonFileFunc();
